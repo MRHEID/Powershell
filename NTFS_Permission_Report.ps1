@@ -79,7 +79,7 @@ Write-host "Building Table...."
 $table | Format-Table -AutoSize
 
 #generate .csv file version of the table, and place on the desktop.
-$CSVPath = "$ENV:USERPROFILE\Desktop\NTFS_Report" + "$PATH" +".csv"
+$CSVPath = "$ENV:USERPROFILE\Desktop\NTFS_Report.csv"
 $tabCsv = $Table | export-CSV $CSVPath -NoType
 
 #End Script
